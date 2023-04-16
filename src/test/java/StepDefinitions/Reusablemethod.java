@@ -123,10 +123,10 @@ public class Reusablemethod {
 	}
 
 	@When("user clicks on deliver to this address button")
-	public void user_clicks_on_deliver_to_this_address_button() {
+	public void user_clicks_on_deliver_to_this_address_button() throws InterruptedException {
 		
-		dta.click();
 		
+		Thread.sleep(2000);
 	}
 
 	@Then("user navigated to the payment method page")
